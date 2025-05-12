@@ -1,0 +1,90 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin } from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <main className="p-6 md:p-12 max-w-4xl mx-auto space-y-12">
+      {/* Home Section */}
+      <section className="space-y-4 text-center">
+        <h1 className="text-4xl font-bold">Hi, I'm Manas Bhardwaj</h1>
+        <p className="text-lg text-gray-600">
+          Focused Data Engineer | Azure DevOps | Big Data & ETL Pipelines
+        </p>
+        <div className="flex justify-center gap-4">
+          <a href="https://github.com/yourusername" target="_blank">
+            <Github className="w-6 h-6" />
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank">
+            <Linkedin className="w-6 h-6" />
+          </a>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="space-y-2">
+        <h2 className="text-2xl font-semibold">About Me</h2>
+        <p>
+          I’m a Data Engineer at Jio Platforms with experience in building scalable ETL/ELT data pipelines using PySpark, Hive, Kafka, and Airflow. I'm also proficient in Azure DevOps and have worked on real-time network monitoring systems in the Telecom sector.
+        </p>
+      </section>
+
+      {/* Projects Section */}
+      <section className="space-y-4">
+        <h2 className="text-2xl font-semibold">Projects</h2>
+
+        <Card>
+          <CardContent className="p-4 space-y-2">
+            <h3 className="text-xl font-medium">Real-Time Work Order Pipeline</h3>
+            <p>
+              Automated network ticket generation system using PySpark, Kafka, and Airflow, reducing manual intervention by 70%.
+            </p>
+            <a
+              className="text-blue-600 underline"
+              href="https://github.com/yourusername/project1"
+              target="_blank"
+            >
+              View on GitHub
+            </a>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="p-4 space-y-2">
+            <h3 className="text-xl font-medium">Data Quality Monitoring in Hive</h3>
+            <p>
+              Built and deployed a custom Hive job tracker for data quality, incorporating Tez DAG checks and timestamp delta monitoring.
+            </p>
+            <a
+              className="text-blue-600 underline"
+              href="https://github.com/yourusername/project2"
+              target="_blank"
+            >
+              View on GitHub
+            </a>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Resume Section */}
+      <section className="space-y-2">
+        <h2 className="text-2xl font-semibold">Resume</h2>
+        <a
+          href="/Manas_Bhardwaj_Resume.pdf"
+          target="_blank"
+          className="text-blue-600 underline"
+        >
+          Download My Resume
+        </a>
+      </section>
+
+      {/* Contact Section */}
+      <section className="space-y-2">
+        <h2 className="text-2xl font-semibold">Contact</h2>
+        <p>Email: manasbhardwaj@email.com</p>
+        <p>Location: Navi Mumbai, India</p>
+      </section>
+    </main>
+  );
+}

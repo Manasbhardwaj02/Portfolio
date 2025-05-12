@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manas Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home" onclick="showSection('home')">Home</a></li>
+      <li><a href="#about" onclick="showSection('about')">About</a></li>
+      <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+      <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Update your home section with this HTML -->
+<section id="home" class="active">
+  <div class="home-content">
+    <h3 class="intro-text">Hi, I am Manas Bhardwaj</h3>
+    <p class="intro-para">
+      I'm a <b>Data Engineer</b> at Jio Platforms Limited with hands-on experience in building scalable data pipelines, real-time analytics systems, and automation workflows. 
+      I specialize in <b>Python, Spark, Kafka, Hive, Airflow</b>, and <b>AWS</b>, managing large-scale data for over 14+ million customers. 
+      My work focuses on performance optimization, proactive monitoring, and delivering data-driven solutions across complex data environments.
+    </p>
+    
+    <div class="contact-icons">
+      <a href="mailto:manasbhardwaj82638@gmail.com" class="icon-link" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/manas-bhardwaj-72b07b201/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="icon-link" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="tel:+98219809979" class="icon-link" title="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a href="https://github.com/Manasbhardwaj02" class="icon-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+    
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="intro-para">
+        I'm a <b>Data Engineer</b> at Jio Platforms Limited with experience in building scalable data pipelines, automating ETL workflows, and delivering real-time analytics solutions for complex data environments. 
+        My work impacts over <b>14+ million customers</b> through optimized data delivery, automated network monitoring, and near real-time KPI tracking across multi-vendor infrastructures like Samsung, Nokia, and Ericsson.
+        <br><br>
+        My expertise spans across <b>Python, Scala, Spark, HQL, SQL, Kafka, Hive, Airflow</b> and cloud platforms like <b>Azure, AWS S3, Glue, Athena, and QuickSight</b>. 
+        I’ve designed systems handling over <b>400M+ records daily</b>, engineered streaming architectures with <b>Kafka and Spark Streaming</b>, and enabled proactive monitoring for national-scale events like the <b>Mahakumbh</b>.
+        <br><br>
+        With a strong focus on <b>performance optimization, automation</b>, and <b>real-time insights</b>, I’m passionate about building data-driven products that improve operational efficiency and customer experience at scale.
+      </p>
+
+        <!-- Add this inside your "about" section, after the existing paragraph -->
+<div class="journey-container">
+  <h3>My Journey</h3>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('job-experience')">
+        <h4>Data Engineer</h4>
+        <span class="timeline-date">December 2023 - Present</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="job-experience" class="timeline-content">
+        <p><strong>Jio Platforms Limited</strong></p>
+        <ul>
+          <li><strong>Real-Time Analytics Optimization:</strong> Improved performance by 20% while handling 400M+ daily records using Spark and Scala.</li>
+          <li><strong>Automated Data Workflows:</strong> Reduced manual intervention by 50% by orchestrating pipelines with Apache Airflow.</li>
+          <li><strong>Customer-Scale Data Delivery:</strong> Delivered real-time datasets supporting 14M+ users, increasing service reliability by 30%.</li>
+          <li><strong>Network Monitoring Automation:</strong> Reduced response time to issues by 40% across multi-vendor networks (Samsung, Nokia, Ericsson).</li>
+          <li><strong>Optimized Spark Performance:</strong> Applied caching, multithreading, and broadcast joins to reduce processing time by 20%.</li>
+          <li><strong>Work Order Pipeline Development:</strong> Integrated JBDL and JCP systems to boost issue detection accuracy by 36%.</li>
+        </ul>
+      </div>
+    </div>
+    
+    
+    <!-- <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('internship')">
+        <h4>Programmer Analyst Intern</h4>
+        <span class="timeline-date">April 2023 - September 2023</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="internship" class="timeline-content">
+        <p><strong>Cognizant</strong></p>
+        <ul>
+          <li>Created innovative solutions with Salesforce Apex and LWC for the Digital Experience Cloud, enhancing system performance and reducing development efforts by 20%.</li>
+<li>Developed and deployed a project leveraging Salesforce Apex, Lightning Web Components (LWC), and Digital Experience Cloud, improving system functionality and reducing development time by 20%.</li>
+<li>Collaborated in a team of 4 to design and implement custom Salesforce solutions, enhancing platform efficiency by 20% and streamlining business processes</li>
+        </ul>
+      </div>
+    </div> -->
+    
+    <div class="timeline-item">
+      <div class="timeline-header" onclick="toggleTimeline('education')">
+        <h4>Bachelor of Engineering in Computer Science</h4>
+        <span class="timeline-date">August 2019 - July 2023</span>
+        <span class="toggle-icon">+</span>
+      </div>
+      <div id="education" class="timeline-content">
+        <p><strong>Shaheed Bhagat Singh State Technical College</strong></p>
+        <ul>
+          <li>CGPA: 8</li>
+          <!-- <li>Relevant coursework: Machine Learning, Data Structures, Database Systems</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+    
+    <!-- Updated Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <!-- First row -->
+        <div class="skills-row">
+          <!-- Programming Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming</h3>
+            <p>Python, Java, Scala, SQL, HQL</p>
+          </div>
+    
+          <!-- Big Data Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Big Data</h3>
+            <p>Spark, PySpark, Hive, Hadoop, YARN, Data Lake</p>
+          </div>
+    
+          <!-- Streaming Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-wave-square"></i>
+            </div>
+            <h3>Streaming</h3>
+            <p>Apache Kafka, Spark Streaming</p>
+          </div>
+        </div>
+    
+        <!-- Second row -->
+        <div class="skills-row">
+          <!-- Orchestration Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Workflow Orchestration</h3>
+            <p>Apache Airflow</p>
+          </div>
+    
+          <!-- Cloud & Visualization Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <h3>Cloud & Visualization</h3>
+            <p>AWS S3, Glue, Athena, QuickSight</p>
+          </div>
+    
+          <!-- Tools Card -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Tools & Concepts</h3>
+            <p>ETL/ELT Pipelines, Data Modeling, Linux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Updated Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        
+        <div class="project-card">
+          <h3>JCP Work Order Automation</h3>
+          <p>Developed an automated work order pipeline integrating JBDL and JCP systems, leveraging Root Cause Fix (RCF) outputs to detect and resolve network issues. Reduced issue resolution time by 40% and improved operational efficiency by 35% via SFTP-based data transfers.</p>
+        </div>
+    
+        <div class="project-card">
+          <h3>Real-Time Telecom KPI System</h3>
+          <p>Built a unified system to monitor cell-level performance across Samsung, Nokia, and Ericsson networks. Used Scala and Spark to optimize KPI computation and achieve near real-time tracking, enabling 30% faster network optimization and 38% improved diagnostics.</p>
+        </div>
+    
+        <div class="project-card">
+          <h3>Mahakumbh Network Monitoring</h3>
+          <p>Designed and deployed a real-time network monitoring system for the Mahakumbh event. Improved network stability by 28% and reduced call failures by 35% during peak traffic using early KPI-based anomaly detection.</p>
+        </div>
+    
+        <div class="project-card">
+          <h3>Real-Time Vehicle Monitoring & Data Ingestion</h3>
+          <p>Engineered an end-to-end real-time streaming solution using IoT sensors, Kafka, Spark Streaming, and AWS services. Enabled location tracking, emergency alerting, and geo-visualizations using QuickSight and Athena, simulating analytics workflows for ride-sharing systems.</p>
+        </div>
+    
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Integrated Chat Widget -->
+  <button class="chat-toggle" title="Chat">
+    <i class="fas fa-comment-dots fa-lg"></i>
+    </svg>
+  </button>
+  
+  <div class="chat-container">
+    <div class="chat-header">
+      <span>Let's Chat</span>
+      <div class="header-buttons">
+        <button class="clear-chat">Clear</button>
+        <button class="close-chat">&times;</button>
+      </div>
+    </div>
+    <div class="chat-messages"></div>
+    <div class="chat-input">
+      <input type="text" placeholder="Type your message..." />
+      <button>Send</button>
+    </div>
+  </div>
+
+  <script>
+    // Updated section toggle function
+function showSection(sectionId) {
+  // First hide all sections
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.remove('active');
+    section.style.display = 'none'; // Explicitly hide all sections
+  });
+  
+  // Then show only the requested section
+  const activeSection = document.getElementById(sectionId);
+  activeSection.classList.add('active');
+  if (sectionId === 'home') {
+    activeSection.style.display = 'flex'; // Explicitly show the active section
+    
+} else {
+    activeSection.style.display = 'block'; // Explicitly show the active section
+}
+}
+
+// Make sure this runs when the page loads to set up initial state
+document.addEventListener('DOMContentLoaded', function() {
+  // Hide all sections except the home section on page load
+  document.querySelectorAll('section:not(#home)').forEach(section => {
+    section.style.display = 'none';
+  });
+});
+    
+    // Chat Widget Functionality
+    const API_KEY = "AIzaSyDdh31WbWEDKWeH_XOda6zMRMEgfkGx49U"; // Replace with your Gemini API key
+    const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + API_KEY;
+
+    const chatToggle = document.querySelector('.chat-toggle');
+    const chatContainer = document.querySelector('.chat-container');
+    const closeChat = document.querySelector('.close-chat');
+    const clearChat = document.querySelector('.clear-chat');
+
+    3
+    const chatInput = document.querySelector('.chat-input input');
+    const chatSend = document.querySelector('.chat-input button');
+    const chatMessages = document.querySelector('.chat-messages');
+
+    // Show chat container when toggle is clicked
+    chatToggle.addEventListener('click', () => {
+        chatContainer.style.display = 'flex';
+        chatToggle.style.display = 'none';
+     
+        if (chatMessages.children.length === 0) {
+        addMessage('bot', "Hi there! I'm Manas's AI assistant. How can I help you with information about Manas's skills, experience, or projects?");
+    }
+    });
+
+    // Close chat container when close button is clicked
+    closeChat.addEventListener('click', () => {
+        chatContainer.style.display = 'none';
+        chatToggle.style.display = 'flex';
+    });
+
+    // Clear chat messages when clear button is clicked
+    clearChat.addEventListener('click', () => {
+        chatMessages.innerHTML = '';
+    });
+
+    // Send message on button click or Enter key press
+    chatSend.addEventListener('click', sendMessage);
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    async function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+
+        addMessage('user', message);
+        chatInput.value = '';
+        
+        const SYSTEM_PROMPT = `<system_prompt>
+YOU ARE A PERSONAL AI REPRESENTATIVE FOR **Manas Bhardwaj**, A DATA ENGINEER CURRENTLY WORKING AT Jio Platforms Limited. YOUR PURPOSE IS TO PROVIDE INFORMATION STRICTLY RELATED TO Manas Bhardwaj'S PROFESSIONAL BACKGROUND, SKILLS, EDUCATION, AND PROJECTS. ANY UNRELATED QUESTION MUST BE DENIED SARCASTICALLY, BUT NOT WITH FIXED RESPONSES—INSTEAD, VARY YOUR REPLIES BASED ON CONTEXT.
+DO NOT LIE OR MENTION ANY OTHER ACHIEVEMENTS THAN THE ONE GIVEN BELOW.
+
+### GREETINGS PROTOCOL
+- ALWAYS respond to greetings in a friendly and professional tone.
+
+### Manas Bhardwaj – PROFESSIONAL SUMMARY
+Manas Bhardwaj is a **Data Engineer at Jio Platforms Limited**, with over a year of experience in building large-scale data pipelines, real-time analytics systems, and automation workflows. He has a strong background in big data technologies, performance optimization, and data orchestration, supporting mission-critical telecom systems across India.
+
+### CONTACT INFORMATION
+- **Phone:** +91 8219809979
+- **Email:** manasbhardwaj82638@gmail.com
+- **LinkedIn:** [Manas Bhardwaj](https://www.linkedin.com/in/manas-bhardwaj-72b07b201/)
+- **GitHub:** [Manasbhardwaj02](https://github.com/Manasbhardwaj02)
+
+### EXPERIENCE & PROJECTS
+- **JCP Work Order Automation:** Built an automated pipeline integrating JBDL and JCP systems; improved resolution time by 40% and operational throughput by 36%.
+- **Network KPI System:** Developed real-time cell-level performance tracking across Samsung, Nokia, and Ericsson using Scala and Spark; improved diagnostics by 38%.
+- **Mahakumbh Network Monitoring:** Engineered a monitoring system for large-scale events; reduced call failures by 35% and improved data speed by 25%.
+- **Real-Time Vehicle Monitoring System:** Simulated an IoT-based vehicle journey using Kafka, Spark Streaming, and AWS services; visualized metrics via QuickSight.
+- **Data Engineering Workflows:** Optimized Spark jobs with caching and broadcast joins; handled 400M+ records daily and reduced load processing time by 20%.
+- **Apache Airflow Integration:** Automated scheduling pipelines; reduced manual intervention by 50%.
+
+### EDUCATION
+- **Bachelor of Technology in Computer Science Engineering** | Shaheed Bhagat Singh State Technical College, Punjab | **GPA: 8.0 (2019–2023)**
+
+### TECHNICAL SKILLS
+- **Programming:** Python, Java, Scala, SQL, HQL  
+- **Big Data:** Spark, PySpark, Hive, Hadoop, YARN, Data Lake  
+- **Streaming & Messaging:** Apache Kafka  
+- **Orchestration:** Apache Airflow  
+- **Cloud & Storage:** AWS S3, Glue, Athena, Redshift, IAM, QuickSight  
+- **Data Engineering Concepts:** Data Modeling, ETL/ELT Pipelines, Real-time Processing, Automation
+
+### STRICT RULES FOR RESPONDING:
+1. **Always respond to greetings naturally and respectfully.**
+2. **ONLY** respond to queries related to Manas Bhardwaj’s professional background, skills, education, or experience.
+3. **Reject all unrelated questions with a clever or sarcastic response**, unique to the context. Examples:
+   - Asked about fitness: _"Manas handles data streams, not protein shakes."_
+   - Asked about astrology: _"Manas aligns data pipelines, not planets."_
+4. **KEEP RESPONSES FOCUSED AND CRISP**—no unnecessary elaboration.
+</system_prompt>`;
+
+        
+      const requestBody = {
+        contents: [{ parts: [{ text: `${SYSTEM_PROMPT}\n\nUser Query: ${message}` }] }]
+      };
+      
+      try {
+          const response = await fetch(GEMINI_URL, {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+                  "Referer": "https://abdulmuizshaikh.github.io/portfolio/"
+              },
+              body: JSON.stringify(requestBody)
+          });
+          
+          const data = await response.json();
+          console.log("Gemini Response:", data);
+          
+          if (data && data.candidates && data.candidates.length > 0) {
+              addMessage('bot', data.candidates[0].content.parts[0].text);
+          } else {
+              addMessage('bot', "No valid response received.");
+          }
+      } catch (error) {
+          console.error("Error fetching response:", error);
+          addMessage('bot', "Error fetching response. Please try again.");
+      }
+    }
+
+    function addMessage(type, content) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', type);
+        messageDiv.textContent = content;
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Add this to your existing JavaScript
+function toggleTimeline(id) {
+  const content = document.getElementById(id);
+  const header = content.previousElementSibling;
+  const icon = header.querySelector('.toggle-icon');
+  
+  content.classList.toggle('active');
+  
+  if (content.classList.contains('active')) {
+    icon.textContent = '−';
+  } else {
+    icon.textContent = '+';
+  }
+}
+  </script>
+</body>
+</html>
